@@ -4,22 +4,9 @@ import { motion } from 'framer-motion';
 function App() {
   const accentColor = 'orange-500';
 
-  const posts = [
-    {
-      id: 1,
-      image: 'https://via.placeholder.com/300',
-      title: 'Bienvenido a Secretos De Mujer',
-      content: 'Descubre nuestros servicios de belleza y bienestar',
-      date: '10 de mayo de 2026',
-    },
-    {
-      id: 2,
-      image: 'https://via.placeholder.com/300',
-      title: 'Nuestros servicios',
-      content: 'Manicuras, pedicuras, cortes de cabello y tratamientos de belleza',
-      date: '10 de mayo de 2026',
-    },
-  ];
+import postsData from './data/posts.json';
+
+  const posts = postsData;
 
   return (
     <div className="min-h-screen bg-black text-white font-sans selection:bg-pink-500/30">
